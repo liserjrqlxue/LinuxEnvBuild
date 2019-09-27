@@ -1,0 +1,6 @@
+# .bashrc
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias top='htop -u `whoami`'
+alias grep='grep --color=auto'
