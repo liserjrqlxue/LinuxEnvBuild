@@ -20,3 +20,7 @@ fi
 if [ -f $HOME/.gorc ]; then
 	source $HOME/.gorc
 fi
+
+if [ -f $HOME/.gnurc ]; then
+	source $HOME/.gnurc
+fi
