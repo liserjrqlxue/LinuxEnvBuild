@@ -5,3 +5,6 @@ export CPATH=$LOCAL/include:$CPATH
 export LIBRARY_PATH=$LOCAL/lib64:$LOCAL/lib:$LIBRARY_PATH
 export LD_LIBRARY_PATH=$LOCAL/lib64:$LOCAL/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=$LOCAL/lib/pkgconfig:$PKG_CONFIG_PATH
+export CFLAGS="-I$LOCAL/include "$CFLAGS
+export LDFLAGS="-L$$LOCAL/lib64 -L$LOCAL/lib "$LDFLAGS
+
