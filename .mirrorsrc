@@ -1,1 +1,3 @@
-export GNUmirror="mirrors.ustc.edu.cn/gnu"
+MIRROR=mirrors.ustc.edu.cn
+export GNUmirror="$MIRROR/gnu"
+export CRANmirror="$MIRROR/CRAN"
