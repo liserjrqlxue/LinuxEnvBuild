@@ -1,6 +1,9 @@
 #!/bin/bash
+pkgname=htop
+pkgauthor=hishamhm
+pkgtype=github
 
-source=github.com/hishamhm/htop
+source=github.com/${pkgauthor}/${pkgname}
 go get -v $source
 cd $(go env GOPATH)/src/$source
 
