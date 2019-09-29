@@ -30,3 +30,7 @@ fi
 if [ -f $HOME/.gccrc ]; then
 	source $HOME/.gccrc
 fi
+
+if [ -f $HOME/.perlbrewrc ]; then
+	source $HOME/.perlbrewrc
+fi
