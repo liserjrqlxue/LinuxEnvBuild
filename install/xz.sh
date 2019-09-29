@@ -6,5 +6,5 @@ source="tukaani.org/${pkgname}/${pkgname}-${pkgver}.tar.gz"
 mkdir -p $HOME/src
 cd $HOME/src
 wget -m $source
-tar avxf $source && cd $(tar -tf $source|head -n1)
-./configure --prefix=$LOCAL && make && make check && make install
+tar avxf $source && cd $(tar -tf $source|head -n1|cut -f 1 -d '/')
+./configure --prefix=$LOCAL && make -j 6 && make check && make install
