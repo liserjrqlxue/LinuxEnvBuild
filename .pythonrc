@@ -1,0 +1,8 @@
+pkgver=3.7.4
+pkgname=Python
+export PYTHONPATH=$LOCAL/${pkgname}-${pkgver}
+
+export PATH=$PYTHONPATH/bin:$PATH
+export CPATH=$PYTHONPATH/include:$CPATH
+export LIBRARY_PATH=$PYTHONPATH/lib64:$LOCAL/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$PYTHONPATH/lib64:$LOCAL/lib:$LD_LIBRARY_PATH

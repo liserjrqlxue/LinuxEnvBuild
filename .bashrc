@@ -34,3 +34,7 @@ fi
 if [ -f $HOME/.perlbrewrc ]; then
 	source $HOME/.perlbrewrc
 fi
+
+if [ -f $HOME/.pythonrc ]; then
+	source $HOME/.pythonrc
+fi
