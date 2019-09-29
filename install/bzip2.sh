@@ -7,4 +7,6 @@ mkdir -p $HOME/src
 cd $HOME/src
 wget -m $source ||  exit 1
 tar avxf $source && cd $(tar -tf $source|head -n1|cut -f 1 -d '/') &&
-make install PREFIX=$LOCAL
+make install PREFIX=$LOCAL CC="gcc $CFLAGS $LDFLAGS"
+make -f Makefile-libbz2_so CC="gcc $CFLAGS $LDFLAGS"
+cp -a libbz2.so* $LOCAL/lib
