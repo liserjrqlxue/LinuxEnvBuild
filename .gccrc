@@ -1,0 +1,8 @@
+pkgver=9.2.0
+pkgname=gcc
+export GCCPATH=$LOCAL/${pkgname}-${pkgver}
+
+export PATH=$GCCPATH/bin:$PATH
+export CPATH=$GCCPATH/include:$CPATH
+export LIBRARY_PATH=$GCCPATH/lib64:$LOCAL/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$GCCPATH/lib64:$LOCAL/lib:$LD_LIBRARY_PATH
