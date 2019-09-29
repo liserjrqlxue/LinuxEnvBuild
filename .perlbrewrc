@@ -1,0 +1,10 @@
+pkgname=perlbrew
+
+export PERLBREW_ROOT=$LOCAL/perl5
+
+if [ -f $PERLBREW_ROOT/etc/bashrc ]; then
+	echo `date` init perlbrew
+	source $PERLBREW_ROOT/etc/bashrc
+	echo `date` init perlbrew done
+fi
+
