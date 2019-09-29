@@ -1,0 +1,8 @@
+pkgver=3.6.1
+pkgname=R
+export RPATH=$LOCAL/${pkgname}-${pkgver}
+
+export PATH=$RPATH/bin:$PATH
+export CPATH=$RPATH/include:$CPATH
+export LIBRARY_PATH=$RPATH/lib64:$RPATH/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$RPATH/lib64:$RPATH/lib:$LD_LIBRARY_PATH

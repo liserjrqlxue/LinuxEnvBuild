@@ -38,3 +38,7 @@ fi
 if [ -f $HOME/.pythonrc ]; then
 	source $HOME/.pythonrc
 fi
+
+if [ -f $HOME/.Rrc ]; then
+	source $HOME/.Rrc
+fi
