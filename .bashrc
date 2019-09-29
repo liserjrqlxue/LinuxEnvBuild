@@ -23,8 +23,8 @@ if [ -f $HOME/.gorc ]; then
 	source $HOME/.gorc
 fi
 
-if [ -f $HOME/.gnurc ]; then
-	source $HOME/.gnurc
+if [ -f $HOME/.mirrorsrc ]; then
+	source $HOME/.mirrorsrc
 fi
 
 if [ -f $HOME/.gccrc ]; then
