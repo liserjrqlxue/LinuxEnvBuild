@@ -26,3 +26,7 @@ fi
 if [ -f $HOME/.gnurc ]; then
 	source $HOME/.gnurc
 fi
+
+if [ -f $HOME/.gccrc ]; then
+	source $HOME/.gccrc
+fi
