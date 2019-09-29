@@ -8,3 +8,4 @@ go get -v $source
 cd $(go env GOPATH)/src/$source
 
 ./buildconf && ./configure --prefix=$LOCAL && make -j 6 && make install
+# make test
