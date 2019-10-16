@@ -1,0 +1,6 @@
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+#BiocManager::install("Biostrings")
+#BiocManager::install("Rsamtools")
+BiocManager::install("GenomicAlignments")
+install.packages("ExomeDepth")
