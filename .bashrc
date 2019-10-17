@@ -19,16 +19,16 @@ if [ -f $HOME/.localrc ]; then
 	source $HOME/.localrc
 fi
 
+if [ -f $HOME/.gccrc ]; then
+	source $HOME/.gccrc
+fi
+
 if [ -f $HOME/.gorc ]; then
 	source $HOME/.gorc
 fi
 
 if [ -f $HOME/.mirrorsrc ]; then
 	source $HOME/.mirrorsrc
-fi
-
-if [ -f $HOME/.gccrc ]; then
-	source $HOME/.gccrc
 fi
 
 if [ -f $HOME/.perlbrewrc ]; then
@@ -41,4 +41,8 @@ fi
 
 if [ -f $HOME/.Rrc ]; then
 	source $HOME/.Rrc
+fi
+
+if [ -f $HOME/.ensembl-veprc ]; then
+	source $HOME/.ensembl-veprc
 fi
