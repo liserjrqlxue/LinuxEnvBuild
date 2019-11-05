@@ -15,6 +15,10 @@ export CPATH=/usr/include:/include
 export LIBRARY_PATH=/usr/lib64:/usr/lib:/lib64:/lib
 export LD_LIBRARY_PATH=/usr/lib64:/usr/lib:/lib64:/lib
 
+if [ -f $HOME/.bash_alise ]; then
+	source $HOME/.bash_alise
+fi
+
 if [ -f $HOME/.localrc ]; then
 	source $HOME/.localrc
 fi
