@@ -1,11 +1,16 @@
 pkgname=autoconf
 pkgver=2.6.9
 pkgver=latest
-source=${GNUmirror}/${pkgname}/${pkgname}-${pkgver}.tar.xz
+pkgurl=${GNUmirror}
+source=${pkgurl}/${pkgname}/${pkgname}-${pkgver}.tar.xz
 mkdir -p $HOME/src
 cd $HOME/src
 
-wget -m ${source}
-tar avxf $source
-cd $(tar -tf $source|head -n1)
-./configure --prefix=$LOCAL && make -j 6 && make check && make install
+if [ ! -e ${source} ];then
+	wget -m ${source} || exit 1
+fi
+pkgdir=$(tar -tf $source|head -n1|cut -f 1 -d '/')
+if [ ! -d ${pkgdir} ];then
+	tar avxf $source && || exit 1
+fi
+cd $pkgdir && ./configure --prefix=$LOCAL && make -j 6 && make install
