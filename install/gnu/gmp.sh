@@ -12,6 +12,6 @@ if [ ! -e ${source} ];then
 fi
 pkgdir=$(tar -tf $source|head -n1|cut -f 1 -d '/')
 if [ ! -d ${pkgdir} ];then
-	tar avxf $source && cd $pkgdir || exit 1
+	tar avxf $source || exit 1
 fi
-./configure --prefix=$LOCAL && make -j 6 && make install
+cd $pkgdir && ./configure --prefix=$LOCAL && make -j 6 && make install
