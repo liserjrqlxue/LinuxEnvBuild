@@ -50,3 +50,5 @@ fi
 if [ -f $HOME/.ensembl-veprc ]; then
 	source $HOME/.ensembl-veprc
 fi
+
+export HISTSIZE=1000000
