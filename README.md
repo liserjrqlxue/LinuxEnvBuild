@@ -13,4 +13,6 @@ sh install/gnu/mpfr.sh
 sh install/gnu/mpc.sh
 #sh install/gnu/isl.sh
 sh install/isl.sh
+sh install/gnu/binutils.sh
+sh install/gnc/gcc.sh
 ```
