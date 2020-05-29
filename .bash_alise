@@ -4,3 +4,4 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias top='htop -u `whoami`'
 alias grep='grep --color=auto'
+alias ll='ls -lhtr'
